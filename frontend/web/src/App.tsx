@@ -637,11 +637,11 @@ type CopilotQueryResponse = {
     : 'Preview a dataset to populate defaults.';
 
    return (
-    <div className="space-y-6">
-     <div className="card card-header">
-      <div>
-       <h1 className="text-2xl font-bold text-slate-900">Forecast & Supply Planning</h1>
-       <p className="text-sm text-slate-500 mt-1">
+    <div className="space-y-4 sm:space-y-6 px-3 sm:px-4 md:px-6">
+     <div className="card card-header flex-col sm:flex-row">
+      <div className="flex-1">
+       <h1 className="text-xl sm:text-2xl font-bold text-slate-900">Forecast & Supply Planning</h1>
+       <p className="text-xs sm:text-sm text-slate-500 mt-1">
         Monitor demand forecasts, align supply plans, and experiment with scenarios
        </p>
       </div>
@@ -653,33 +653,33 @@ type CopilotQueryResponse = {
       )}
      </div>
 
-     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
       <div className="card card-body">
-       <div className="text-sm font-semibold text-slate-700 uppercase tracking-wider mb-3">Forecast Volume</div>
-       <div className="text-4xl font-bold text-blue-600 mb-2">{volumeLabel}</div>
-       <div className="text-sm text-slate-700 font-medium">{horizonLabel}</div>
+       <div className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wider mb-2 sm:mb-3">Forecast Volume</div>
+       <div className="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">{volumeLabel}</div>
+       <div className="text-xs sm:text-sm text-slate-700 font-medium">{horizonLabel}</div>
       </div>
 
       <div className="card card-body">
-       <div className="text-sm font-semibold text-slate-700 uppercase tracking-wider mb-3">Plan Health</div>
-       <div className="text-4xl font-bold text-emerald-600 mb-2">{serviceLevelLabel}</div>
-       <div className="text-sm text-slate-700 font-medium">{planVolumeLabel}</div>
+       <div className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wider mb-2 sm:mb-3">Plan Health</div>
+       <div className="text-2xl sm:text-4xl font-bold text-emerald-600 mb-1 sm:mb-2">{serviceLevelLabel}</div>
+       <div className="text-xs sm:text-sm text-slate-700 font-medium">{planVolumeLabel}</div>
       </div>
 
       <div className="card card-body">
-       <div className="text-sm font-semibold text-slate-700 uppercase tracking-wider mb-3">Scenarios</div>
-       <div className="text-4xl font-bold text-amber-600 mb-2">{scenarioLabel}</div>
-       <div className="text-sm text-slate-700 font-medium">{scenarioSubLabel}</div>
+       <div className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wider mb-2 sm:mb-3">Scenarios</div>
+       <div className="text-2xl sm:text-4xl font-bold text-amber-600 mb-1 sm:mb-2">{scenarioLabel}</div>
+       <div className="text-xs sm:text-sm text-slate-700 font-medium">{scenarioSubLabel}</div>
       </div>
 
       <div className="card card-body">
-       <div className="text-sm font-semibold text-slate-700 uppercase tracking-wider mb-3">Data Source</div>
-       <div className="text-4xl font-bold text-purple-600 mb-2">{activeDatasetLabel}</div>
-       <div className="text-sm text-slate-700 font-medium">{datasetDescriptor}</div>
+       <div className="text-xs sm:text-sm font-semibold text-slate-700 uppercase tracking-wider mb-2 sm:mb-3">Data Source</div>
+       <div className="text-2xl sm:text-4xl font-bold text-purple-600 mb-1 sm:mb-2">{activeDatasetLabel}</div>
+       <div className="text-xs sm:text-sm text-slate-700 font-medium">{datasetDescriptor}</div>
       </div>
      </div>
 
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-2 sm:gap-4">
       <div className="card">
        <div className="card-header">
         <h3 className="font-semibold text-slate-900">API Settings</h3>

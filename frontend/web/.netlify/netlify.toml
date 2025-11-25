@@ -10,6 +10,7 @@ headers = []
 publish = "C:\\IBP_ai\\frontend\\web\\dist"
 publishOrigin = "config"
 commandOrigin = "config"
+base = "C:\\IBP_ai\\frontend\\web"
 command = "npm run build"
 
 [build.environment]
