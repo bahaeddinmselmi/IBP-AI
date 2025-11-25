@@ -1480,17 +1480,17 @@ type CopilotQueryResponse = {
   return (
    <div className="min-h-screen flex flex-col bg-white">
     <header className="border-b border-slate-200 bg-white shadow-sm sticky top-0 z-40">
-     <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-      <div className="flex items-center gap-4">
+     <div className="mx-auto max-w-7xl px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
+      <div className="flex items-center gap-3 sm:gap-4">
        <div className="h-10 w-10 rounded-lg bg-blue-600 text-white font-bold text-lg flex items-center justify-center">
         I
        </div>
        <div>
-        <div className="text-lg font-bold text-slate-900">IBP Control Tower</div>
-        <div className="text-xs text-slate-500">Integrated Business Planning Platform</div>
+        <div className="text-base sm:text-lg font-bold text-slate-900">IBP Control Tower</div>
+        <div className="text-[10px] sm:text-xs text-slate-500">Integrated Business Planning Platform</div>
        </div>
       </div>
-      <nav className="flex items-center gap-1">
+      <nav className="flex flex-wrap justify-end gap-1 sm:gap-2 text-xs sm:text-sm">
        {NAV_ITEMS.map((item) => {
         const isActive = page === item.id;
         return (
@@ -1512,8 +1512,8 @@ type CopilotQueryResponse = {
     </header>
 
     <main className="flex-1 bg-slate-50">
-     <div className="mx-auto max-w-7xl px-6 py-8 flex gap-8">
-      <div className="flex-1">
+     <div className="mx-auto max-w-7xl px-3 sm:px-6 py-6 sm:py-8 flex flex-col lg:flex-row gap-6 lg:gap-8">
+      <div className="flex-1 min-w-0">
        {error && (
         <div className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
          <div className="font-semibold">Error</div>
@@ -1532,8 +1532,8 @@ type CopilotQueryResponse = {
        {page === 'data' && renderDataImport()}
       </div>
 
-      <aside className="w-96 shrink-0">
-       <div className="sticky top-24 card space-y-4 px-4 py-4">
+      <aside className="w-full lg:w-96 shrink-0 mt-6 lg:mt-0">
+       <div className="lg:sticky lg:top-24 card space-y-4 px-4 py-4">
         <div className="card-header">
          <div>
           <div className="text-lg font-bold text-slate-900">AI Copilot</div>
